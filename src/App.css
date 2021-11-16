@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 300px;
+  width: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.form-container {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-input {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.text-area-container {
+  width: 300px;
+}
+
+textarea {
+  border: 2px solid #4233FF;
+}
+
+.button-create {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  background-color: #4233FF;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.button-create:hover {
+  background-color: #2C21B6 ;
+}
+
+.note-list-container {
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+   
+.note-card {
+  width: 12rem;
+  background-color: #ECECEC;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-title {
+  font-size: 14px;
+  color: #4233FF;
+}
+
+.note-text {
+  font-size: 12px;
+}
+
+.note-date{
+  font-size: 10px;
+}
+
+.control-container{
+  display: flex;
+  align-self: flex-end;
+}
+
+.edit-btn, 
+.delete-btn {
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 10px;
+}
+
+.edit-btn:hover, 
+.delete-btn:hover {
+  background-color: #BFBFBF;
+}
