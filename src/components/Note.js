@@ -20,7 +20,6 @@ const Note = (props) => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const [modalTitle, setModalTitle] = useState();
     const [modalText, setModalText] = useState();
-    const [modalDelete, setModalDelete] = useState();
 
     const {
         notes, setNotes
@@ -90,8 +89,8 @@ const Note = (props) => {
                 <button className="edit-btn" onClick={openModal}>Edit</button>
                 <button className="delete-btn" onClick={handleDeleteNote} value={props.text} >Delete</button>
             </div>
-            <div className="modal-container">
-                <button onClick={openModal}>Open Note</button>
+            
+            <div className="modal-container">       
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
@@ -99,7 +98,7 @@ const Note = (props) => {
                     contentLabel="Example Modal"
                 >
 
-                    <button onClick={closeModal}>close</button>
+                    <button className="modal-close-btn" onClick={closeModal}>x</button>
                     <div>
                         <div>
                             <textarea 
@@ -107,7 +106,7 @@ const Note = (props) => {
                             onChange={handleModalTitle}>
                             {props.title}
                             </textarea>
-                            <p className="note-date">23-5-2022</p>
+                            <p className="note-date note-date-modal">23-5-2022</p>
                             <textarea 
                             className="note-text note-text-modal" 
                             onChange={handleModalText}>

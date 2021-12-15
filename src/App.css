@@ -45,15 +45,17 @@ textarea {
   border: 2px solid #4233FF;
 }
 
-.button-create {
+button.button-create {
   margin-top: 1rem;
   padding: 10px 15px;
   background-color: #4233FF;
   color: white;
   border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
 }
 
-.button-create:hover {
+button.button-create:hover {
   background-color: #2C21B6 ;
 }
 
@@ -92,17 +94,42 @@ textarea {
 
 .control-container{
   display: flex;
-  align-self: flex-end;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
 .edit-btn, 
 .delete-btn {
-  margin-left: 5px;
+  margin-right: 5px;
   padding: 3px;
   font-size: 10px;
+  cursor: pointer;
+
 }
 
 .edit-btn:hover, 
 .delete-btn:hover {
   background-color: #BFBFBF;
+}
+
+.note-text-modal {
+  width: 100%;
+}
+
+.modal-close-btn {
+  padding: 2px 4px;
+  margin-bottom: 10px;
+}
+
+button.save-btn {
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+p.note-date-modal {
+  margin-bottom: 5px;
+}
+
+textarea.note-title-modal {
+  width: 100%;
 }
