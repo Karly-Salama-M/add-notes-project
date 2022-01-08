@@ -1,6 +1,6 @@
 # React Note App Project
 
-This is the first React project that I made at ITC Frontend Development Bootcamp. It's an app to create, edit and delete notes. 
+This is the first React project that I made at ITC Frontend Development Bootcamp. It's an app to create, edit, save and delete notes. 
 Only Desktop view(at the moment)
 
 ## Table of contents
@@ -37,7 +37,6 @@ Users should be able to:
 
 - [React](https://reactjs.org/) - JS library
 - CSS custom properties
-- Flexbox
 
 ### What I learned
 
